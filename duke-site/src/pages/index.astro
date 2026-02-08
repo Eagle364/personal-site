@@ -1,0 +1,50 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import NavCard from "../components/NavCard.astro";
+---
+
+<BaseLayout title="Personal Site">
+  <section style="margin-bottom: 2.5rem;">
+    <p
+      style="font-size: 0.85rem; letter-spacing: 0.18em; text-transform: uppercase; color: #9ca3af; margin-bottom: 0.75rem;"
+    >
+      PERSONAL / LAB NOTEBOOK
+    </p>
+    <h1 style="font-size: 2rem; margin: 0 0 0.75rem;">
+      技術メモとツールをまとめるための個人サイト
+    </h1>
+    <p style="max-width: 40rem; margin: 0; line-height: 1.7; color: #cbd5f5;">
+      実験・計算・開発のメモや、小さな計算ツールを少しずつ置いていく予定です。
+      まだ中身は少ないですが、必要になったものから順に追加していきます。
+    </p>
+  </section>
+
+  <section style="display: grid; gap: 1.25rem;">
+    <NavCard
+      href="/about"
+      title="About"
+      summary="このサイトと筆者の簡単な紹介。よく使う技術スタックや興味のある分野をメモしておきます。"
+    />
+    <NavCard
+      href="/projects"
+      title="Projects"
+      summary="個人で進めている開発・試作・検討中のテーマを一覧で整理します。完成度は問いません。"
+    />
+    <NavCard
+      href="/tools"
+      title="Tools"
+      summary="単位換算や簡単な計算ツールを置く場所です。まずはシンプルなものから作っていきます。"
+      badge="Soon"
+    />
+    <NavCard
+      href="/notes"
+      title="Notes"
+      summary="技術メモ・調査メモ・気づきを残しておくノートです。記事というより、自分用の実験ノートに近いイメージ。"
+    />
+    <NavCard
+      href="/contact"
+      title="Contact"
+      summary="GitHub やメールアドレスなど、連絡先や外部リンクをまとめておきます。"
+    />
+  </section>
+</BaseLayout>
